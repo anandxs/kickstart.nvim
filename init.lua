@@ -21,6 +21,7 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
+vim.opt.wrap = false
 
 -- [[ Basic Keymaps ]]
 vim.keymap.set('i', 'jk', '<Esc>')
@@ -399,6 +400,7 @@ require('lazy').setup({
         tsserver = {},
         cssls = {},
         emmet_ls = {},
+        dockerls = {},
         --
 
         lua_ls = {
